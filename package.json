@@ -7,7 +7,9 @@
     "test": "node --test tests/tms.test.js",
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
-    "cli": "node src/cli/index.js"
+    "cli": "node src/cli/index.js",
+    "build:client": "npm --prefix client run build",
+    "client": "npm --prefix client run dev"
   },
   "keywords": [],
   "author": "",
