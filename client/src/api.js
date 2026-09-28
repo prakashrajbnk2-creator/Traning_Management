@@ -1,6 +1,6 @@
 // API Service with JWT authentication and error handling
 
-const API_BASE = '/api';
+const API_BASE = `${import.meta.env.VITE_API_URL}/api`;
 
 export function getToken() {
   return localStorage.getItem('tms_token');
