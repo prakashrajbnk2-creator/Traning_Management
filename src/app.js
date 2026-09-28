@@ -38,6 +38,12 @@ app.get('/api/health', (req, res) => {
 });
 
 // API Routes
+app.get('/test-login-route', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Backend route is working'
+  });
+});
 app.use('/api/auth', authRoutes);
 app.use('/api/student', studentRoutes);
 app.use('/api/trainer', trainerRoutes);
